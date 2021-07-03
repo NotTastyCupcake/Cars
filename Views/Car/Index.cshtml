@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<Cars.Models.CarModel>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Список автомобилей";
 }
 
-<h1>Index</h1>
+<h1>Список автомобилей</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Добавить новый</a>
 </p>
 <table class="table">
     <thead>
@@ -43,9 +43,9 @@
                 @Html.DisplayFor(modelItem => item.Year)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.CarID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CarID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CarID">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.CarID">Изменить</a> |
+                <a asp-action="Details" asp-route-id="@item.CarID">Детали</a> |
+                <a asp-action="Delete" asp-route-id="@item.CarID">Удалить</a>
             </td>
         </tr>
 }
